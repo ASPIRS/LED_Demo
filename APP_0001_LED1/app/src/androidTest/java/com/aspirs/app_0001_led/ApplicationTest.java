@@ -1,4 +1,4 @@
-package appirs.app_0001_leddemo;
+package com.aspirs.app_0001_led;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

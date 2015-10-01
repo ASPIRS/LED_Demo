@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">APP_0001_LEDDemo</string>
+    <string name="app_name">APP_0001_LED</string>
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>

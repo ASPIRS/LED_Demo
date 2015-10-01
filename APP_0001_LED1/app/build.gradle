@@ -5,11 +5,16 @@ android {
     buildToolsVersion "23.0.1"
 
     defaultConfig {
-        applicationId "appirs.app_0001_leddemo"
+        applicationId "com.aspirs.app_0001_led"
         minSdkVersion 15
         targetSdkVersion 22
         versionCode 1
         versionName "1.0"
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
     }
     buildTypes {
         release {

@@ -1,4 +1,4 @@
-package appirs.app_0001_leddemo;
+package com.aspirs.app_0001_led;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -8,6 +8,10 @@ import android.widget.Button;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.Toast;
+//. private import
+import com.aspirs.hardlibrary.*;
+
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -21,6 +25,9 @@ public class MainActivity extends AppCompatActivity {
     class MyButtonListener implements View.OnClickListener {
         @Override
         public void onClick(View v) {
+
+            HardControl hardcontrol = new HardControl();
+
             // Perform action on click
             ledon = !ledon;
             if(ledon) {
@@ -96,9 +103,9 @@ public class MainActivity extends AppCompatActivity {
 
         button = (Button)findViewById(R.id.BUTTON);
 
-        checkBoxLed1 = (CheckBox)findViewById(R.id.LED1);
         checkBoxLed2 = (CheckBox)findViewById(R.id.LED2);
         checkBoxLed3 = (CheckBox)findViewById(R.id.LED3);
+        checkBoxLed1 = (CheckBox)findViewById(R.id.LED1);
         checkBoxLed4 = (CheckBox)findViewById(R.id.LED4);
 
         button.setOnClickListener(new MyButtonListener());
